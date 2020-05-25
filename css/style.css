@@ -1,0 +1,401 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;600&display=swap");
+
+/* Variables */
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-very-pale-cyan: hsl(193, 100%, 96%);
+  --color-very-dark-cyan: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(208, 11%, 55%);
+
+  --font-family-normal: "Open Sans", sans-serif;
+  --font-family-heading: "Poppins", sans-serif;
+
+  --font-size-normal: 18px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-heading: 600;
+  --fong-weight-heading-light: 300;
+}
+
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-family-normal);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  box-sizing: border-box;
+}
+
+.fm-top {
+  background-image: url('../img/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: var(--color-very-pale-cyan);
+  background-size: 100% 100%;
+}
+
+/* General Sections */
+.container {
+  width: 90%;
+  max-width: 540px;
+  margin: 0px auto;
+}
+
+/* Header */
+header {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .fm-brand-name img {
+  display: block;
+  height: 16px;
+  margin: 24px 0px;
+}
+
+header .fm-try-it-free {
+  display: block;
+  padding: 4px 24px;
+  margin: 20px 0px;
+  font-family: var(--font-family-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-very-dark-cyan);
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Section */
+.fm-intro-section .container {
+  padding-bottom: 48px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "caption" "image";
+  align-items: center;
+
+  text-align: center;
+}
+
+.fm-intro-section .fm-intro-caption {
+  grid-area: caption;
+}
+
+.fm-intro-section h1 {
+  padding-top: 64px;
+  font-family: var(--font-family-heading);
+  font-size: 1.4em;
+  font-weight: var(--font-weight-heading);
+}
+
+.fm-intro-section p {
+  padding: 32px 0px;
+}
+
+.fm-intro-section a {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: var(--font-weight-bold);
+  color: white;
+  background-color: var(--color-pink);
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fm-intro-section img {
+  grid-area: image;
+  width: 100%;
+}
+
+/* Features Section */
+.fm-features-section {
+  padding: 32px 0px;
+  background-image: linear-gradient(
+    to top,
+    var(--color-very-dark-cyan),
+    var(--color-very-dark-cyan) 103px,
+    white 103px
+  );
+}
+
+.fm-features-section .fm-feature-block {
+  margin: 32px 0px;
+  padding: 48px;
+  border-radius: 32px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'image' 'caption';
+}
+
+.fm-features-section .fm-feature-block img {
+  grid-area: image;
+  width: 100%;
+}
+
+.fm-features-section .fm-feature-block .fm-feature-caption {
+  grid-area: caption;
+  text-align: center;
+}
+
+.fm-features-section .fm-feature-block .fm-feature-caption h2 {
+  padding-top: 72px;
+  padding-bottom: 24px;
+  font-size: 1.4em;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+}
+
+.fm-features-section .fm-feature-block .fm-feature-caption p {
+  line-height: 1.5em;
+  color: var(--color-grayish-blue);
+}
+
+.fm-features-section .fm-call-to-action {
+  max-width: 540px;
+  margin: 128px auto 0px;
+  padding: 48px 0px;
+  text-align: center;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fm-features-section .fm-call-to-action h2 {
+  padding-bottom: 24px;
+  font-size: 1.4em;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-very-dark-cyan);
+}
+
+.fm-features-section .fm-call-to-action a {
+  display: block;
+  width: 50%;
+  margin: 0px auto;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: var(--font-weight-bold);
+  color: white;
+  background-color: var(--color-pink);
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  padding: 48px 0px;
+  background-color: var(--color-very-dark-cyan);
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.fm-footer-body {
+  padding: 24px 0px;
+  color: white;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'contact' 'links' 'social';
+}
+
+.fm-footer-body .fm-contact-info {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 32px auto;
+  align-items: center;
+  justify-items: left;
+  gap: 8px;
+}
+
+.fm-footer-body .fm-contact-info p {
+  font-size: 0.9em;
+}
+
+.fm-footer-body .fm-contact-info img {
+  width: 50%;
+}
+
+.fm-footer-body .fm-contact-info img[alt="Location"] {
+  align-self: start;
+  margin-top: 8px;
+}
+
+.fm-footer-body .fm-links {
+  padding: 32px 0px;
+}
+
+.fm-footer-body .fm-links a {
+  display: block;
+  padding: 8px;
+}
+
+.fm-footer-body .fm-social {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.fm-footer-body .fm-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0px 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+footer .fm-copyright {
+  font-size: 0.8em;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading-light);
+  color: white;
+  text-align: center;
+}
+
+/* Tablet Displays */
+@media (min-width: 800px) {
+  header .fm-brand-name img {
+    height: 24px;
+    margin: 24px 0px;
+  }
+
+  header .fm-try-it-free {
+    padding: 8px 48px;
+    margin: 16px 0px;
+  }
+
+  .fm-features-section .container {
+    max-width: none;
+  }
+
+  .fm-features-section .fm-feature-block {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'caption image';
+    align-items: center;
+    gap: 64px;
+    height: 400px;
+  }
+
+  .fm-features-section .fm-feature-block.fm-alternating {
+    grid-template-areas: 'image caption';
+  }
+
+  .fm-features-section .fm-feature-block img {
+    height: 100%;
+    justify-self: right;
+  }
+
+  .fm-features-section .fm-feature-block.fm-alternating img {
+    justify-self: center;
+  }
+
+  .fm-features-section .fm-feature-block .fm-feature-caption {
+    text-align: left;
+    justify-self: center;
+
+    padding: 32px;
+  }
+
+  .fm-features-section .fm-feature-block.fm-alternating .fm-feature-caption {
+    justify-self: right;
+  }
+
+  .fm-features-section .fm-feature-block .fm-feature-caption h2 {
+    padding: 0px;
+    padding-bottom: 16px;
+  }
+
+  footer .container {
+    max-width: none;
+  }
+
+  .fm-footer-body {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'contact links social';
+  }
+
+  .fm-footer-body .fm-links {
+    height: 60%;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .fm-footer-body .fm-links a {
+    width: 50%;
+  }
+
+  footer .fm-copyright {
+    text-align: right;
+  }
+}
+
+/* Desktop Displays */
+@media (min-width: 1000px) {
+  .fm-top {
+    background-image: url('../img/bg-hero-desktop.svg');
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .fm-intro-section .container {
+    padding: 48px 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "caption image";
+  }
+
+  .fm-intro-section .fm-intro-caption {
+    margin-right: 64px;
+  }
+
+  .fm-intro-section h1 {
+    padding-top: 0px;
+    font-size: 1.8em;
+  }
+
+  .fm-intro-section a {
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .fm-intro-caption {
+    text-align: left;
+  }
+
+  .fm-intro-section img {
+    justify-self: end;
+  }
+
+  .fm-features-section .fm-feature-block img {
+    width: auto;
+  }
+}
