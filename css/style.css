@@ -95,10 +95,13 @@ header .fm-try-it-free {
   font-family: var(--font-family-heading);
   font-size: 1.4em;
   font-weight: var(--font-weight-heading);
+  color: var(--color-very-dark-cyan);
 }
 
 .fm-intro-section p {
   padding: 32px 0px;
+  color: var(--color-very-dark-cyan);
+  line-height: 1.5em;
 }
 
 .fm-intro-section a {
@@ -158,6 +161,7 @@ header .fm-try-it-free {
   font-size: 1.4em;
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-heading);
+  color: var(--color-very-dark-cyan);
 }
 
 .fm-features-section .fm-feature-block .fm-feature-caption p {
@@ -397,5 +401,12 @@ footer .fm-copyright {
 
   .fm-features-section .fm-feature-block img {
     width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fm-intro-section h1 {
+    padding-top: 0px;
+    font-size: 2.4em;
   }
 }
